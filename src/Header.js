@@ -8,11 +8,16 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 class Header extends Component {
    render(){
      return(
-       <div class="container" style={{background:"pink"}}>
+       <div class="container">
+          <div class ="row">
+            <div class="col-sm-12" style={{backgroundColor:"pink", height:"10%"}}>
+              <Home />
+              <About />
+              <Contact />
+            </div>
 
-         <Home />
-         <About />
-         <Contact />
+          </div>
+
 
        </div>
      );
