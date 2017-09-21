@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './Contact.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import {Row, Col} from 'react-bootstrap';
 class Contact extends Component {
   render(){
     return(
       <div>
-        <h1>hhh</h1>
+        <h1>Call for help!</h1>
       </div>
     );
   }

@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './About.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import {Row, Col, Button,ButtonToolbar} from 'react-bootstrap';
 class About extends Component{
   render(){
     return(
-        <div>
-            <h2>Some shit!</h2>
+      // <Button bsStyle="" style={btn} bsClass="btn" bsSize="large">Something</Button>
 
-        </div>
+       <Button bsStyle="link" bsSize="large"> About
+       </Button>
+  //     <ButtonToolbar>
+  //    <Button bsStyle="primary" bsSize="small">Small button</Button>
+  //    <Button bsSize="small">Small button</Button>
+  //  </ButtonToolbar>
+
     );
   }
 }

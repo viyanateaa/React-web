@@ -3,20 +3,20 @@ import './Header.css';
 import About from './About.js';
 import Home from './Home.js';
 import Contact from './Contact.js';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+
+import {Row, Col} from 'react-bootstrap';
 class Header extends Component {
    render(){
      return(
        <div class="container">
-          <div class ="row">
-            <div class="col-sm-12" style={{backgroundColor:"pink", height:"10%"}}>
+          <Row>
+            <Col lg={1}  xs={12} md={8} style={{backgroundColor:"pink", height:"10%"}}>
               <Home />
               <About />
               <Contact />
-            </div>
+            </Col>
 
-          </div>
+          </Row>
 
 
        </div>
