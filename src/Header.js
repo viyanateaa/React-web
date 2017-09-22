@@ -12,11 +12,22 @@ class Header extends Component {
           <Row>
             <Col lg={1}  xs={12} md={8} style={{backgroundColor:"pink", height:"10%"}}>
               <Home />
+            </Col>
+          </Row>
+
+          <Row>
+            <Col lg={1}  xs={12} md={8} style={{backgroundColor:"pink", height:"10%"}}>
               <About />
+            </Col>
+          </Row>
+
+          <Row>
+            <Col lg={4}  xs={12} md={8} style={{backgroundColor:"pink", height:"10%"}}>
               <Contact />
             </Col>
-
           </Row>
+
+
 
 
        </div>
