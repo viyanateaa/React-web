@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header.js';
 import {Row, Col} from 'react-bootstrap';
 import './App.css';
+import Clock from './Clock.js';
 // import {Bootstrap, Grid, Row, Col} from 'react-bootstrap';
 class App extends Component {
   constructor(props){
@@ -19,21 +20,20 @@ class App extends Component {
 
   render() {
     return (
+
             <div className="App">
               <div className="App-title"> Countdown to {this.state.deadline}</div>
-              <div className="days"> days</div>
-              <div className="hours"> hours</div>
-              <div className="minutes"> minutes</div>
-              <div className="seconds"> seconds</div>
+              <Clock />
 
 
-              <div>
+
+
                 <input placeholder = 'new date'
                 onChange={event => this.setState({newDeadline: event.target.value})}/>
                 <button onClick={() => this.changeDeadline()}>
                   Submit
                 </button>
-              </div>
+
             </div>
 
     );
